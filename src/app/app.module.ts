@@ -11,6 +11,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { SearchComponent } from './components/Routing/search.components';
 import { HomeComponent } from './components/Routing/home.components';
 import { DownloadsComponent } from './components/Routing/downloads.components';
+import { SignoutComponent } from './components/Routing/signout.components';
+import { Card_oneComponent } from './components/Routing/card_one.components';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { DownloadsComponent } from './components/Routing/downloads.components';
     LayoutComponent,
     SearchComponent,
     HomeComponent,
-    DownloadsComponent
+    DownloadsComponent,
+    SignoutComponent,
+    Card_oneComponent
   ],
   imports: [
     BrowserModule,

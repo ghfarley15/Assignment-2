@@ -14,3 +14,17 @@ class="btn btn-outline-dark btn-rounded"
 Download Skype
 </a>
 </div>
+<div style="padding-bottom: 40px;"></div>
+
+
+<div style="background-color: gray;">
+<div class="container-fluid">
+    <div class="d-flex flex-row" >
+            <div *ngFor= "let download of downloads;">
+                 <app-download-cards title = {{download.title}} uurl = {{download.uurl}} imagePath = {{download.imagePath}}>Loading</app-download-cards>
+            </div>
+
+       
+    </div>
+</div>
+</div>

@@ -13,6 +13,7 @@ import { HomeComponent } from './components/Routing/home.components';
 import { DownloadsComponent } from './components/Routing/downloads.components';
 import { SignoutComponent } from './components/Routing/signout.components';
 import { Card_oneComponent } from './components/Routing/card_one.components';
+import { downloadcards } from './components/download-cards';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { Card_oneComponent } from './components/Routing/card_one.components';
     HomeComponent,
     DownloadsComponent,
     SignoutComponent,
-    Card_oneComponent
+    Card_oneComponent,
+    downloadcards
   ],
   imports: [
     BrowserModule,

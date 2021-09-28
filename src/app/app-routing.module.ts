@@ -13,8 +13,8 @@ const routes: Routes = [
 {path: 'search', component: SearchComponent},
 {path: 'downloads', component: DownloadsComponent},
 {path: 'signout', component: SignoutComponent},
-{path: 'card_one', component: Card_oneComponent}
-
+{path: 'card_one', component: Card_oneComponent},
+{path: '', redirectTo: '/home', pathMatch: 'full'}
 
 ];
 

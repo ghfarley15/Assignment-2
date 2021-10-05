@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Card_oneComponent } from './components/Routing/card_one.components';
 import { DownloadsComponent } from './components/Routing/downloads.components';
 import { HomeComponent } from './components/Routing/home.components';
+import { NumbersComponent } from './components/Routing/numbers.components';
 import { SearchComponent } from './components/Routing/search.components';
 import { SignoutComponent } from './components/Routing/signout.components';
 
@@ -14,6 +15,7 @@ const routes: Routes = [
 {path: 'downloads', component: DownloadsComponent},
 {path: 'signout', component: SignoutComponent},
 {path: 'card_one', component: Card_oneComponent},
+{path: 'numbers', component: NumbersComponent},
 {path: '', redirectTo: '/home', pathMatch: 'full'}
 
 ];

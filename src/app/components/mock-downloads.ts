@@ -16,7 +16,8 @@ export const mock_downloads = [
         uurl:"Url",
         imagePath:"./assets/web.jpg"
 
-    },
+    }
+    ,
     {
         title: "Download on Desktop",
         uurl:"Url",

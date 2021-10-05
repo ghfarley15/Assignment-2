@@ -14,6 +14,11 @@ import { DownloadsComponent } from './components/Routing/downloads.components';
 import { SignoutComponent } from './components/Routing/signout.components';
 import { Card_oneComponent } from './components/Routing/card_one.components';
 import { downloadcards } from './components/download-cards';
+import { HttpClientModule } from "@angular/common/http";
+import { UserInfoComponent } from './components/user-info.component';
+import { NumbersComponent } from './components/Routing/numbers.components';
+
+
 
 
 @NgModule({
@@ -29,11 +34,14 @@ import { downloadcards } from './components/download-cards';
     DownloadsComponent,
     SignoutComponent,
     Card_oneComponent,
-    downloadcards
+    downloadcards,
+    UserInfoComponent,
+    NumbersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
    
   ],
   providers: [],

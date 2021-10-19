@@ -1,7 +1,7 @@
 
 
 import { Component, Injectable, OnInit } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+
 import { UserInfo } from "../user-info.model";
 import { UserInfoService } from "../user-info.service";
 

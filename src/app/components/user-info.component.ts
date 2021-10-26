@@ -19,11 +19,9 @@ export class UserInfoComponent implements OnInit{
 
 
     ngOnInit(): void {
-        console.log("Sending A Get Request");
-        this.userInfoService.getUserInfo();
-        console.log("Got User Info")
+        console.log("registering");
         this.showUserInfo();
-    }
+           }
 
 
 

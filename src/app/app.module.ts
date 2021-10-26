@@ -17,6 +17,8 @@ import { downloadcards } from './components/download-cards';
 import { HttpClientModule } from "@angular/common/http";
 import { UserInfoComponent } from './components/user-info.component';
 import { NumbersComponent } from './components/Routing/numbers.components';
+import { EditUserInfoComponent } from './components/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -36,12 +38,14 @@ import { NumbersComponent } from './components/Routing/numbers.components';
     Card_oneComponent,
     downloadcards,
     UserInfoComponent,
-    NumbersComponent
+    NumbersComponent,
+    EditUserInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule ,
+    FormsModule
    
   ],
   providers: [],

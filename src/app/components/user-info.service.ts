@@ -19,4 +19,11 @@ getUserInfo(){
 
 }
 
+    modifyUserInfo(data:UserInfo){
+       
+
+        return this.http.put(this.baseUrl+this.myInfoEndPoint, data);
+
+    }
+
 }

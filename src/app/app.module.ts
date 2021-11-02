@@ -19,6 +19,9 @@ import { UserInfoComponent } from './components/user-info.component';
 import { NumbersComponent } from './components/Routing/numbers.components';
 import { EditUserInfoComponent } from './components/edit-user-info.component';
 import { FormsModule } from '@angular/forms';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 
 
 
@@ -45,7 +48,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule ,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
    
   ],
   providers: [],

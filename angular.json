@@ -30,7 +30,6 @@
                 "input": "./node_modules/bootstrap/",
                 "output": "/assets/"
               }
-
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
@@ -106,6 +105,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "assignment:build:production",
+            "firebaseProject": "skype-app-23623",
+            "firebaseHostingSite": "skype-app-23623"
           }
         }
       }

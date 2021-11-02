@@ -24,6 +24,6 @@ getUserInfo(){
 
         return this.http.put(this.baseUrl+this.myInfoEndPoint, data);
 
-    }
+    } 
 
-}
+} 

@@ -22,7 +22,8 @@ import { FormsModule } from '@angular/forms';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
-
+import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -42,13 +43,16 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     downloadcards,
     UserInfoComponent,
     NumbersComponent,
-    EditUserInfoComponent
+    EditUserInfoComponent,
+    AuthComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule ,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'skype-app'),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideDatabase(() => getDatabase())
    
